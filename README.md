@@ -1,7 +1,8 @@
 # React performance optimization experiments
 Set of simple experiments to establish the impact of react performance optimizations (useCallback, useMemo, memo) under different scenarios.
 
-Bootstapped off of create-react-app
+## Usage
+This project is designed for self-trial, to be checked out and profiled on your own machine while adjusting the code. Just uncomment the scenario you want to run in src/App.jsx, `npm install` and `npm start`
 
 ## Conclusions
 React renders the entire component tree by default. Hence any efforts made to enforce equality across renders (useCallback, useMemo) are detrimental by default.
